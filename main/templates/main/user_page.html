@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>User Page</title>
+</head>
+<body>
+<h1>Welcome, {{ user.username }}!</h1>
+<p>You have successfully logged in to the bug tracker application.</p>
+<p>Here are some actions you can perform:</p>
+<ul>
+    <li><a href="{% url 'bug_list' %}">View all bugs</a></li>
+    <li><a href="{% url 'bug_create' %}">Report a new bug</a></li>
+    <li><a href="{% url 'bug_update' pk=bug.id %}">Update a bug</a></li>
+    <li><a href="{% url 'bug_delete' pk=bug.id %}">Delete a bug</a></li>
+</ul>
+<a href="{% url 'logout' %}">Logout</a>
+</body>
+</html>

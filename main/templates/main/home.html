@@ -1,0 +1,56 @@
+{% extends 'main/base.html' %}
+
+{% block title %}
+Home
+{% endblock %}
+
+{% block content %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bug Tracker - Home</title>
+</head>
+<body>
+<header>
+    <h1>Bug Tracker</h1>
+    <nav>
+        <ul>
+            <li><a href="/create">Report Bug</a></li>
+            <li><a href="/view">Search Bugs</a></li>
+            <li><a href="#">About Us</a></li>
+        </ul>
+    </nav>
+</header>
+<main>
+    <section>
+        <h2>Welcome to Bug Tracker</h2>
+        <p>
+            Bug Tracker is a powerful tool for managing and tracking bugs and issues in your software projects. With Bug Tracker, you can easily report, track, and resolve bugs, collaborate with your team members, and improve the quality of your software.
+        </p>
+    </section>
+    <section>
+        <h2>Latest Bugs</h2>
+        <ul>
+            <li><a href="#">Bug #123: Login form not working</a></li>
+            <li><a href="#">Bug #456: Image upload failing</a></li>
+            <li><a href="#">Bug #789: Database connection error</a></li>
+        </ul>
+    </section>
+    <section>
+        <h2>Why Choose Bug Tracker?</h2>
+        <ul>
+            <li>Easy to use and user-friendly interface</li>
+            <li>Customizable bug tracking workflow</li>
+            <li>Real-time updates and notifications</li>
+            <li>Powerful search and filtering options</li>
+            <li>Collaborative bug tracking with your team members</li>
+        </ul>
+    </section>
+</main>
+<footer>
+    <p>&copy; 2023 Bug Tracker. All rights reserved.</p>
+</footer>
+</body>
+</html>
+{% endblock %}
