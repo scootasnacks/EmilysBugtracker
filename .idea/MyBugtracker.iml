@@ -3,7 +3,7 @@
   <component name="NewModuleRootManager" LANGUAGE_LEVEL="JDK_18" inherit-compiler-output="true">
     <exclude-output />
     <content url="file://$MODULE_DIR$" />
-    <orderEntry type="jdk" jdkName="Python 3.9 (MyBugtracker)" jdkType="Python SDK" />
+    <orderEntry type="jdk" jdkName="Python 3.9 (bg)" jdkType="Python SDK" />
     <orderEntry type="sourceFolder" forTests="false" />
   </component>
 </module>
