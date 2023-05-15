@@ -10,7 +10,11 @@ from register import views as v
 from django.shortcuts import render
 from django.contrib.auth import authenticate, login
 from django.shortcuts import render, redirect
-from register import login.html
+
+
+def user_page(request):
+    return render(request, 'main/user_page.html')
+
 
 def login_view(request):
     if request.method == 'POST':
@@ -19,13 +23,10 @@ def login_view(request):
         user = authenticate(request, username=username, password=password)
         if user is not None:
             login(request, user)
-            return redirect('user_page')
+            return redirect('user_page.html')
         else:
             return render(request, 'login.html', {'error_message': 'Invalid login'})
     return render(request, 'login.html')
-
-def user_page(request):
-    return render(request, 'user_page.html')
 
 
 def index(response, id):
